@@ -101,7 +101,14 @@ ul{
     --color-for-logo: #4d5ae5;
 }
 
+/*--adaptive--*/
 
+@media (max-width: 600px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
 
 .link{
     text-decoration: none;
