@@ -130,34 +130,22 @@ ul{
         align-items: center;
     }
 
-    .section-four-ul:not(:last) {
-        margin-bottom: 72px;
-    }
-
     .section-three{
-        display: none;
+        display: flex;
     }
 }
-
-@media screen and (max-width: 768px) {
-    .menu{
-        visibility: hidden;
-    }
-    
-    .page-contact{
-        visibility: hidden;
-    }
-
-    .logo{
-        margin-left: 16px;
-    }
-}
-
-
 
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .page-contact {
+        display: block;
     }
 }
 
@@ -188,7 +176,6 @@ ul{
  
 .logo{
     font-family: "Raleway", sans-serif;
-        margin-right: 76px;
         font-weight: 800;
         font-size: 18px;
         line-height: 1.17;
@@ -208,7 +195,7 @@ ul{
 }
 
 .menu{
-    display: flex;
+    display: none;
     gap: 40px;
 }
 
@@ -311,8 +298,8 @@ ul{
 }
 
 .page-contact{
-  display: flex;
-  gap: 40px;
+    display: none;
+    gap: 40px;
 }
 
 .header-hamburger-div{
@@ -441,6 +428,7 @@ ul{
 /*--section-three--*/
 
 .section-three{
+    display: none;
     padding-bottom: 120px;
 }
 
