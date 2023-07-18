@@ -113,11 +113,62 @@ ul{
 
 /*--adaptive--*/
 
-@media (max-width: 768px) {
-    .navigation {
-        color: #fff;
+.container {
+    max-width: 428px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*--adaptive-mobile--*/
+
+@media screen and (min-width: 428px) {
+    .section-four-team-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-four-ul:not(:last) {
+        margin-bottom: 72px;
+    }
+
+    .section-three{
+        display: none;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .menu{
+        visibility: hidden;
+    }
+    
+    .page-contact{
+        visibility: hidden;
+    }
+
+    .logo{
+        margin-left: 16px;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
 
 /*--header--*/
 
@@ -262,6 +313,17 @@ ul{
 .page-contact{
   display: flex;
   gap: 40px;
+}
+
+.header-hamburger-div{
+    display: none;
+}
+
+.header-hamburger{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    fill: #2E2F42;
 }
 
 /*--section-one--*/
