@@ -1077,7 +1077,7 @@ fill: #FFF;
         padding: 0;
     }
 
-    .icon-menu-hamburger-div {
+    .js-menu-container {
         display: none;
     }
 }
