@@ -1080,6 +1080,10 @@ fill: #FFF;
     .js-menu-container {
         display: none;
     }
+
+    .menu-container {
+        display: none;
+    }
 }
 
 
