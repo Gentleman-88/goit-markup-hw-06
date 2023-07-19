@@ -53,12 +53,16 @@
             </li>
           </ul>
         </address>
-        <div class="icon-menu-hamburger-div"> 
-        <a href="" class="icon-menu-hamburger"><svg class="header-hamberger" 
+        <div class="js-menu-container"> 
+        <button type="button" class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg class="header-hamberger" 
             width="32px"
             height="22px">
               <use href="./images/icons.svg#icon-menu-hamburger"></use>
-            </svg></a>
+            </svg>
+          </button>
           </div>
       </div>
     </header>
@@ -385,7 +389,6 @@
       </section>
     </main>
     <!--footer-->
-    <!--
     <footer class="footer">
       <div class="footer-div container">
         <div class="footer-logo-p">
@@ -531,5 +534,27 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <div class="menu-container js-menu-container is-hidden" id="mobile-menu">
+      <button type="button" class="menu-toggle js-close-menu">
+          <svg class="header-hamberger" 
+            width="32px"
+            height="22px">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            </svg>
+          </button>
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+        </div>
+        <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
