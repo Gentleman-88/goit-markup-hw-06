@@ -395,7 +395,6 @@ ul{
 /*--section-three--*/
 
 .section-three{
-    display: none;
     padding-bottom: 120px;
 }
 
@@ -454,6 +453,12 @@ ul{
 
 .about-worker{
     padding: 32px 0;
+}
+
+
+.section-four-team-list {
+    display: flex;
+    gap: 24px;
 }
 
 
@@ -1004,12 +1009,29 @@ fill: #FFF;
 
 
 
+/*--menu-mobile--*/
+
+.menu-container{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: #4D5AE5;
+    transform: translateX(100%);
+}
+
+.menu-container.is-open{
+    transform: translateX(0);
+}
 
 /*--adaptive-mobile--*/
-@media screen and (min-width: 150px) {
+@media screen and (min-width: 150px) and (max-width: 428px) {
 
     .logo {
             padding: 24px 0;
+            margin-left: 0;
         }
 
      .menu {
@@ -1021,14 +1043,20 @@ fill: #FFF;
         flex-direction: column;
         gap: 12px;
     }
+
+        .section-one-headline {
+            max-width: 220px;
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 40px;
+            letter-spacing: 0.72px;
+            text-transform: capitalize;
+        }
 }
 
-@media screen and (min-width: 428px) {
-    .section-four-team-list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+@media screen and (min-width: 428px) and (max-width: 768px) {
+
 
     .logo {
         padding: 24px 0;
@@ -1045,15 +1073,64 @@ fill: #FFF;
         gap: 12px;
     }
 
-    .section-three {
-        display: flex;
+    .section-one-headline {
+        max-width: 320px;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
     }
+
+    .section-two-icons-div{
+        display: none;
+    }
+
+    .section-two-ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-two-li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-two-headlines{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+    }
+
+    .section-two-p{
+        width: 396px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+    }
+
+    .section-three {
+        display: none;
+    }
+
+        .section-four-team-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            align-items: center;
+        }
 }
 
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1158px) {
     .container {
         max-width: 768px;
     }
@@ -1061,6 +1138,8 @@ fill: #FFF;
     .logo {
         margin-right: 120px;
     }
+
+
 
         .menu {
             display: flex;
@@ -1070,7 +1149,6 @@ fill: #FFF;
             display: flex;
             flex-direction: column;
             gap: 12px;
-            padding: 16px 0;
         }
 
     .information {
@@ -1081,8 +1159,34 @@ fill: #FFF;
         display: none;
     }
 
-    .menu-container {
+    .section-two-icons-div {
         display: none;
+    }
+
+        .section-two-headlines {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 40px;
+            letter-spacing: 0.72px;
+            text-transform: capitalize;
+        }
+
+    .section-two-ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+    }
+
+        .section-two-li{
+            width: 48%;
+        }
+
+    .section-two-p {
+        font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0.32px;
+            margin-bottom: 72px;
     }
 }
 
@@ -1094,16 +1198,12 @@ fill: #FFF;
         padding-right: 15px;
     }
 
-        .page-contact {
-            display: flex;
-            flex-direction: row;
-            padding: 24px 0;
-            gap: 40px;
-        }
-
-    .information {
-    display: flex;
-    margin-left: auto;
+    .logo {
+        margin-right: 76px;
     }
+
+        .js-menu-container {
+            display: none;
+        }
 
 }
