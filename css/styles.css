@@ -427,7 +427,6 @@ ul{
 
 .list-our-team{
     background-color: #FFFFFF;
-    width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -1015,8 +1014,8 @@ fill: #FFF;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     padding: 40px;
     background-color: #fff;
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
@@ -1176,6 +1175,96 @@ fill: #FFF;
             letter-spacing: 0.72px;
             text-transform: capitalize;
         }
+
+    .section-two-icons-div {
+        display: none;
+    }
+
+        .section-two-ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section-two-li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+
+        .section-two-headlines {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 40px;
+            letter-spacing: 0.72px;
+            text-transform: capitalize;
+        }
+
+        .section-two-p {
+            width: 396px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0.32px;
+        }
+
+        .section-three {
+            display: none;
+        }
+
+
+        .section-four-team-list {
+            display: flex;
+            flex-direction: column;
+            gap: 72px;
+            align-items: center;
+        }
+
+        .list-our-team {
+            background-color: #FFFFFF;
+            border-radius: 0px 0px 4px 4px;
+            box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        }
+
+        .castomers-ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 72px;
+        }
+
+
+        .costomers-list {
+            width: calc((100% - 16px) / 2);
+        }
+
+
+        .footer-div {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-logo-p {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 72px;
+            margin-right: 0;
+        }
+        
+        .footer-social-media {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 72px;
+        }
+        
+        .form-footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
 }
 
 @media screen and (min-width: 428px) and (max-width: 768px) {
@@ -1245,14 +1334,21 @@ fill: #FFF;
         .section-four-team-list {
             display: flex;
             flex-direction: column;
-            gap: 24px;
+            gap: 72px;
             align-items: center;
+        }
+
+        .list-our-team {
+            background-color: #FFFFFF;
+            border-radius: 0px 0px 4px 4px;
+            box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
         }
 
         .castomers-ul {
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 72px;
         }
 
         .footer-div{
@@ -1349,6 +1445,22 @@ fill: #FFF;
             line-height: 24px;
             letter-spacing: 0.32px;
             margin-bottom: 72px;
+    }
+
+
+    .section-four-team-list {
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
+        align-items: center;
+    }
+
+
+    .list-our-team {
+        background-color: #FFFFFF;
+        width: calc((100% - 72px) / 2);
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     }
 }
 
