@@ -77,11 +77,11 @@ body{
     overflow: hidden;
 }
 
-.container{
+/* .container{
     width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
-}
+} */
 
 img{
     display: block;
@@ -113,13 +113,13 @@ ul{
 
 /*--adaptive--*/
 
-.container {
-    max-width: 428px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-left: auto;
-    margin-right: auto;
-}
+ .container {
+     max-width: 428px;
+     padding-left: 16px;
+     padding-right: 16px;
+     margin-left: auto;
+     margin-right: auto;
+ }
 
 
 
@@ -141,6 +141,7 @@ ul{
  
 .logo{
     font-family: "Raleway", sans-serif;
+        padding: 24px 0;
         font-weight: 800;
         font-size: 18px;
         line-height: 1.17;
@@ -160,8 +161,13 @@ ul{
 }
 
 .menu {
-    display: flex;
-    gap: 40px;
+    /* display: flex;
+    gap: 40px; */
+    display: none;
+}
+
+.page-contact {
+    display: none;
 }
 
 
@@ -239,12 +245,6 @@ ul{
 }
 
 
-.page-contact {
-    display: flex;
-    gap: 40px;
-}
-
-
 .information{
         display: block;
         padding: 24px 0;
@@ -293,19 +293,22 @@ ul{
     padding-top: 188px;
     padding-bottom: 188px;
 }
-
 .section-one-headline{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
     margin-bottom: 48px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 496px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    /* max-width: 496px
     width: 496px;
     text-align: center;
     font-size: 56px;
-    font-weight: 700;
-        line-height: 1.07;
-        letter-spacing: 0.02em;
-        color: #FFFFFF;
+    font-weight: 700; */
 }
 
 .button-order{
@@ -336,7 +339,6 @@ ul{
 }
 
 /*--section-two--*/
-
 .section-two{
     padding: 120px 0;
 }
@@ -350,6 +352,7 @@ ul{
     height: 112px;
     border-radius: 4px;
     margin-bottom: 8px;
+    display: none;
 }
 
 
@@ -367,29 +370,40 @@ ul{
 }
 
 .section-two-headlines{
-        margin-bottom: 8px;
-        font-weight: 500;
-        font-size: 20px;
+        font-size: 36px;
+        font-weight: 600;
         line-height: 1.2;
         letter-spacing: 0.02em;
+        text-transform: capitalize;
+        margin-bottom: 8px;
         color: #2E2F42;
 }
 
 .section-two-ul{
-    display: flex;
-    gap: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
 }
 
 .section-two-li{
-    width: calc((100% - 72px) / 4);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    /* width: calc((100% - 72px) / 4); */
 }
 
 .section-two-p{   
-        font-weight: 400;
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 24px;
+            letter-spacing: 0.32px;
+        /* font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;   
-        color: #434455;
+        color: #434455; */
 }
 
 /*--section-three--*/
@@ -530,7 +544,6 @@ ul{
     align-items: center; 
     justify-content: center;
     color:#8e8f99;
-    width: 168px;
     height: 88px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
@@ -1149,125 +1162,8 @@ fill: #FFF;
 
 
 /*--adaptive-mobile--*/
-@media screen and (min-width: 150px) and (max-width: 428px) {
 
-    .logo {
-            padding: 24px 0;
-            margin-left: 0;
-        }
-
-     .menu {
-        display: none;
-    }
-    
-    .page-contact {
-        display: none;
-        flex-direction: column;
-        gap: 12px;
-    }
-
-        .section-one-headline {
-            max-width: 220px;
-            text-align: center;
-            font-size: 36px;
-            font-weight: 700;
-            line-height: 40px;
-            letter-spacing: 0.72px;
-            text-transform: capitalize;
-        }
-
-    .section-two-icons-div {
-        display: none;
-    }
-
-        .section-two-ul {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .section-two-li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        }
-
-        .section-two-headlines {
-            font-size: 36px;
-            font-weight: 700;
-            line-height: 40px;
-            letter-spacing: 0.72px;
-            text-transform: capitalize;
-        }
-
-        .section-two-p {
-            width: 396px;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 24px;
-            letter-spacing: 0.32px;
-        }
-
-        .section-three {
-            display: none;
-        }
-
-
-        .section-four-team-list {
-            display: flex;
-            flex-direction: column;
-            gap: 72px;
-            align-items: center;
-        }
-
-        .list-our-team {
-            background-color: #FFFFFF;
-            border-radius: 0px 0px 4px 4px;
-            box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-        }
-
-        .castomers-ul {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 72px;
-        }
-
-
-        .costomers-list {
-            width: calc((100% - 16px) / 2);
-        }
-
-
-        .footer-div {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .footer-logo-p {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 72px;
-            margin-right: 0;
-        }
-        
-        .footer-social-media {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 72px;
-        }
-        
-        .form-footer {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-}
-
-@media screen and (min-width: 428px) and (max-width: 768px) {
+@media screen and (min-width: 428px) {
 
 
     .logo {
@@ -1279,13 +1175,10 @@ fill: #FFF;
         display: none;
     }
     
-    .page-contact {
-        display: none;
-        flex-direction: column;
-        gap: 12px;
-    }
+
 
     .section-one-headline {
+        margin-bottom: 72px;
         max-width: 320px;
         text-align: center;
         font-size: 36px;
@@ -1295,9 +1188,6 @@ fill: #FFF;
         text-transform: capitalize;
     }
 
-    .section-two-icons-div{
-        display: none;
-    }
 
     .section-two-ul {
         display: flex;
@@ -1320,10 +1210,9 @@ fill: #FFF;
     }
 
     .section-two-p{
-        width: 396px;
         font-size: 16px;
         font-weight: 500;
-        line-height: 24px;
+        line-height: 1.5;
         letter-spacing: 0.32px;
     }
 
@@ -1376,37 +1265,31 @@ fill: #FFF;
             flex-direction: column;
             align-items: center;
         }
-
-        .footer-email{
-        }
-
-        .button-form-footer{
-        
-        }
 }
 
 
 
 
-@media screen and (min-width: 768px) and (max-width: 1158px) {
+@media screen and (min-width: 768px) {
+
     .container {
-        max-width: 768px;
-    }
+            max-width: 768px;
+        }
 
     .logo {
         margin-right: 120px;
     }
 
-
-
         .menu {
             display: flex;
+            gap: 40px;
         }
     
         .page-contact {
             display: flex;
             flex-direction: column;
             gap: 12px;
+            justify-content: center;
         }
 
     .information {
@@ -1417,8 +1300,14 @@ fill: #FFF;
         display: none;
     }
 
-    .section-two-icons-div {
-        display: none;
+    .section-one-headline {
+    text-align: center;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 1.12px;
+    width: 496px;
     }
 
         .section-two-headlines {
@@ -1439,13 +1328,6 @@ fill: #FFF;
             width: 48%;
         }
 
-    .section-two-p {
-        font-size: 16px;
-            font-weight: 500;
-            line-height: 24px;
-            letter-spacing: 0.32px;
-            margin-bottom: 72px;
-    }
 
 
     .section-four-team-list {
@@ -1476,7 +1358,79 @@ fill: #FFF;
         margin-right: 76px;
     }
 
+        .menu {
+        display: flex;
+        gap: 40px;
+        }
+
+        .page-contact {
+            display: flex;
+            flex-direction: row;
+            padding: 24px 0;
+            gap: 40px;
+        }
+
         .hamberger-button {
             display: none;
         }
+
+        .section-one-headline {
+                text-align: center;
+                font-size: 56px;
+                font-weight: 700;
+                line-height: 60px;
+                letter-spacing: 1.12px;
+        }
+
+                 .section-two-icons-div {
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     background-color: #F4F4FD;
+                     width: 264px;
+                     height: 112px;
+                     border-radius: 4px;
+                     margin-bottom: 8px;
+                 }
+        
+        
+                 .section-two-icons {
+                     display: flex;
+                     gap: 24px;
+                 }
+        
+                 .section-two-svg {
+                     width: 64px;
+                     height: 64px;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                 }
+        
+                 .section-two-headlines {
+                     margin-bottom: 8px;
+                     font-weight: 500;
+                     font-size: 20px;
+                     line-height: 1.2;
+                     letter-spacing: 0.02em;
+                     color: #2E2F42;
+                 }
+        
+                 .section-two-ul {
+                     display: flex;
+                     flex-direction: row;
+                     gap: 24px;
+                 }
+        
+                 .section-two-li {
+                     width: calc((100% - 72px) / 4);
+                 }
+        
+                 .section-two-p {
+                     font-weight: 400;
+                     font-size: 16px;
+                     line-height: 1.5;
+                     letter-spacing: 0.02em;
+                     color: #434455;
+                 }
 }
