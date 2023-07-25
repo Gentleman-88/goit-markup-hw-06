@@ -502,7 +502,7 @@ ul{
 /*--section-customers--*/
 
 .customers{
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 
@@ -563,17 +563,21 @@ ul{
 
 .footer-div{
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    gap: 72px;
+    /* display: flex;
+    align-items: baseline; */
 }
 
 .footer {
     background-color: #2E2F42;
-    padding: 100px 0;
+    padding: 97px 0;
 }
 
-
 .footer-logo-p {
-    margin-right: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-p{
@@ -588,6 +592,7 @@ ul{
 
 .footer-ul {
     display: flex;
+    justify-content: center;
     gap: 16px;
     margin: 0;
 }
@@ -598,6 +603,7 @@ ul{
 }
 
 .footer-social{
+    text-align: center;
 margin-bottom: 16px;
 color: #FFFFFF;
     font-size: 16px;
@@ -645,13 +651,11 @@ color: #FFFFFF;
 }
 
 .footer-form{
-    margin-left: 80px;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
 }
 
-.form-footer{
-   display: flex; 
-   gap: 24px;
-}
 
 .footer-form-subscribe{
     color: #ffffff;
@@ -663,7 +667,7 @@ letter-spacing: 0.02em;;
 }
 
 .footer-email{
-    width: 264px;
+    width: 100%;
     height: 40px; 
     border-radius: 4px;
     border: 1px solid #ffffff;
@@ -674,6 +678,7 @@ letter-spacing: 0.02em;;
     padding-left: 16px;
     color: #ffffff;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    margin-bottom: 16px;
 }
 
 .footer-email::placeholder{
@@ -681,6 +686,7 @@ letter-spacing: 0.02em;;
 }
 
 .button-form-footer{
+    margin: 0 auto;
     background-color: var(--color-for-logo);
     min-width: 165px;
     height: 40px;
@@ -1213,6 +1219,10 @@ fill: #FFF;
         letter-spacing: 0.32px;
     }
 
+    .costomers-list {
+        width: calc((100% - 16px) / 2);
+    }
+
     .castomers-ul {
         display: flex;
         flex-direction: row;
@@ -1221,16 +1231,10 @@ fill: #FFF;
         gap: 72px 16px;
     }
 
-        .footer-div{
-            display: flex;
-            flex-direction: column;
-        }
-
         .footer-logo-p{
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: 72px;
             margin-right: 0;
         }
 
@@ -1238,13 +1242,22 @@ fill: #FFF;
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: 72px;
         }
 
         .form-footer{
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+                .footer-div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 72px;
+                }
+
+        .footer-email {
+            width: 398px;
         }
 }
 
@@ -1320,19 +1333,16 @@ fill: #FFF;
         gap: 64px 24px;
         align-items: center;
     }
-
-
-    .list-our-team {
-        background-color: #FFFFFF;
-        border-radius: 0px 0px 4px 4px;
-    }
-
         .castomers-ul {
             display: flex;
             flex-direction: row;
             align-items: center;
             flex-wrap: wrap;
-            gap: 72px 16px;
+            gap: 72px 24px;
+        }
+
+        .costomers-list {
+            width: calc((100% - 24px) / 4);
         }
 }
 
@@ -1441,5 +1451,21 @@ fill: #FFF;
 
 .section-four {
     padding: 120px 0;
+}
+
+
+.customers {
+    padding: 120px 0;
+}
+
+.castomers-ul {
+    display: flex;
+    gap: 24px;
+    margin: 0;
+}
+
+.costomers-list {
+    height: 88px;
+    width: calc((100% - 24px) / 7);
 }
 }
