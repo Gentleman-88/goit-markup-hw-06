@@ -580,6 +580,7 @@ ul{
     align-items: center;
 }
 
+
 .footer-p{
     max-width: 264px;
         font-weight: 400;
@@ -603,7 +604,7 @@ ul{
 }
 
 .footer-social{
-    text-align: center;
+    align-items: flex-start;
     margin-bottom: 16px;
     color: #FFFFFF;
     font-size: 16px;
@@ -658,6 +659,7 @@ ul{
 
 
 .footer-form-subscribe{
+    align-items: flex-start;
     color: #ffffff;
     margin-bottom: 16px;
     font-size: 16px;
@@ -1247,7 +1249,6 @@ fill: #FFF;
         .form-footer{
             display: flex;
             flex-direction: column;
-            align-items: center;
         }
 
                 .footer-div {
@@ -1346,17 +1347,22 @@ fill: #FFF;
         }
 
         .footer-div {
-            width: 552px;
+            width: 582px;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             gap: 72px 24px;
         }
 
+        .footer-logo {
+            align-items: flex-start;
+        }
+
         .form-footer {
             display: flex;
             flex-direction: row;
         }
+
 
         .footer-email {
             width: 264px;
