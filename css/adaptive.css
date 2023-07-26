@@ -122,6 +122,12 @@
         display: none;
     }
 
+        @media (min-resolution: 192dpi) {
+            .section-one{ 
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tab.png);
+            }
+        }
+
     .section-one-headline {
         margin-bottom: 48px;
         margin-left: auto;
@@ -233,6 +239,7 @@
    .portfolio-nav-img {
        display: flex;
        flex-wrap: wrap;
+       flex-direction: row;
        column-gap: 24px;
        row-gap: 72px;
    }
@@ -385,6 +392,31 @@
     .footer-email {
         width: 264px;
         margin-bottom: 0;
+    }
+
+    .section-port-one{
+    padding-top: 96px;
+    padding-bottom: 120px;
+    }
+
+    .portfolio-nav-buttons{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 72px;
+    }
+    
+    .portfolio-nav-img{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 24px;
+    row-gap: 48px;
+    }
+
+
+    .portfolio-list-img{
+    width: calc((100% - 48px) / 3);
     }
 
 }
