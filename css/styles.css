@@ -369,6 +369,7 @@ ul{
 }
 
 .section-two-headlines{
+    text-align: center;
         font-size: 36px;
         font-weight: 600;
         line-height: 1.2;
@@ -520,19 +521,17 @@ ul{
 }
 
 
-.castomers-ul{
-    display: flex;
-        flex-direction: column;
+    .castomers-ul {
+        display: flex;
+        flex-direction: row;
         align-items: center;
-        gap: 72px;
-    /* display: flex;
-    gap: 24px;
-    margin: 0; */
-}
+        flex-wrap: wrap;
+        gap: 72px 16px;
+    }
 
-.costomers-list{
-    height: 88px;
-}
+ .costomers-list {
+        width: calc((100% - 16px) / 2);
+    }
 
 .customers-icon-a{
     width: 100%;

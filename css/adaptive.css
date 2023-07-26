@@ -33,7 +33,6 @@
 
 
     .section-two-headlines {
-        text-align: center;
         font-size: 36px;
         font-weight: 700;
         line-height: 40px;
@@ -46,18 +45,6 @@
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.32px;
-    }
-
-    .costomers-list {
-        width: calc((100% - 16px) / 2);
-    }
-
-    .castomers-ul {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 72px 16px;
     }
 
     .footer-logo-p {
