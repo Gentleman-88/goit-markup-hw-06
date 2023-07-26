@@ -15,6 +15,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/adaptive.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
@@ -55,6 +56,18 @@
             </li>
           </ul>
         </address>
+        <div class="hamberger-button">
+          <button
+            type="button"
+            class="menu-toggle-header js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="header-hamberger" width="32px" height="22px">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <main>
@@ -75,14 +88,12 @@
           </ul>
           <ul class="portfolio-nav-img list">
             <li class="portfolio-list-img">
-              <a href="" class="portfolio-a-card link"
-                ><div class="portfolio-box">
+              <a href="" class="portfolio-a-card link">
+                <div class="portfolio-box">
                   <img
                     src="./images/app-examp.jpg"
-                    alt="Banking App Interface
-              Concept"
+                    alt="Cashless Payment"
                     width="360"
-                    class="portfolio-img"
                   />
                   <p class="portfolio-box-overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -91,14 +102,13 @@
                   </p>
                 </div>
                 <div class="portfolio-list-explain">
-                  <h2 class="section-two-headlines">
+                  <h2 class="portfolio-card-title">
                     Banking App Interface Concept
                   </h2>
-                  <p class="section-two-p">App</p>
+                  <p class="portfolio-p">App</p>
                 </div>
               </a>
             </li>
-
             <li class="portfolio-list-img">
               <a href="" class="portfolio-a-card link">
                 <div class="portfolio-box">
@@ -114,8 +124,8 @@
                   </p>
                 </div>
                 <div class="portfolio-list-explain">
-                  <h2 class="section-two-headlines">Cashless Payment</h2>
-                  <p class="section-two-p">Marketing</p>
+                  <h2 class="portfolio-card-title">Cashless Payment</h2>
+                  <p class="portfolio-p">Marketing</p>
                 </div>
               </a>
             </li>
@@ -134,8 +144,8 @@
                   </p>
                 </div>
                 <div class="portfolio-list-explain">
-                  <h2 class="section-two-headlines">Meditation App</h2>
-                  <p class="section-two-p">App</p>
+                  <h2 class="portfolio-card-title">Meditation App</h2>
+                  <p class="portfolio-p">App</p>
                 </div>
               </a>
             </li>
@@ -155,8 +165,8 @@
                   </p>
                 </div>
                 <div class="portfolio-list-explain">
-                  <h2 class="section-two-headlines">Taxi Service</h2>
-                  <p class="section-two-p">Marketing</p>
+                  <h2 class="portfolio-card-title">Taxi Service</h2>
+                  <p class="portfolio-p">Marketing</p>
                 </div>
               </a>
             </li>
@@ -175,8 +185,8 @@
                   </p>
                 </div>
                 <div class="portfolio-list-explain">
-                  <h2 class="section-two-headlines">Screen Illustrations</h2>
-                  <p class="section-two-p">Design</p>
+                  <h2 class="portfolio-card-title">Screen Illustrations</h2>
+                  <p class="portfolio-p">Design</p>
                 </div>
               </a>
             </li>
@@ -195,7 +205,7 @@
                   </p>
                 </div>
                 <div class="portfolio-list-explain">
-                  <h2 class="section-two-headlines">Online Courses</h2>
+                  <h2 class="portfolio-card-title">Online Courses</h2>
                   <p class="section-two-p">Marketing</p>
                 </div>
               </a>
@@ -215,10 +225,10 @@
                   </p>
                 </div>
                 <div class="portfolio-list-explain">
-                  <h2 class="section-two-headlines">
+                  <h2 class="portfolio-card-title">
                     Instagram Stories Concept
                   </h2>
-                  <p class="section-two-p">Design</p>
+                  <p class="portfolio-p">Design</p>
                 </div>
               </a>
             </li>
@@ -233,8 +243,8 @@
                   </p>
                 </div>
                 <div class="portfolio-list-explain">
-                  <h2 class="section-two-headlines">Organic Food</h2>
-                  <p class="section-two-p">Web Site</p>
+                  <h2 class="portfolio-card-title">Organic Food</h2>
+                  <p class="portfolio-p">Web Site</p>
                 </div>
               </a>
             </li>
@@ -253,8 +263,8 @@
                   </p>
                 </div>
                 <div class="portfolio-list-explain">
-                  <h2 class="section-two-headlines">Fresh Coffee</h2>
-                  <p class="section-two-p">Web Site</p>
+                  <h2 class="portfolio-card-title">Fresh Coffee</h2>
+                  <p class="portfolio-p">Web Site</p>
                 </div>
               </a>
             </li>
@@ -325,5 +335,68 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="header-hamberger" width="8px" height="8px">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-list list">
+        <li>
+          <a href="./index.html" class="mobile-navigation link">Studio</a>
+        </li>
+        <li>
+          <a href="./portfolio.html" class="mobile-navigation link"
+            >Portfolio</a
+          >
+        </li>
+        <li><a href="" class="mobile-navigation link">Contacts</a></li>
+      </ul>
+      <ul class="list">
+        <li>
+          <a href="tel:+110001111111" class="mobile-tel link"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="mobile-mail link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-social-list list">
+        <li class="mobile-list-icons">
+          <a href="" class="mobile-icons link"
+            ><svg width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use></svg
+          ></a>
+        </li>
+        <li class="mobile-list-icons">
+          <a href="" class="mobile-icons link"
+            ><svg width="24" height="24">
+              <use href="./images/icons.svg#icon-twittersvg"></use></svg
+          ></a>
+        </li>
+        <li class="mobile-list-icons">
+          <a href="" class="mobile-icons link"
+            ><svg width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use></svg
+          ></a>
+        </li>
+        <li class="mobile-list-icons">
+          <a href="" class="mobile-icons link"
+            ><svg width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use></svg
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
