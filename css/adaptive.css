@@ -185,10 +185,6 @@
         gap: 72px 24px;
     }
 
-    .footer-logo {
-        align-items: flex-start;
-    }
-
     .form-footer {
         display: flex;
         flex-direction: row;
@@ -200,7 +196,6 @@
 
     .footer-social-media {
         align-items: flex-start;
-        margin-right: 80px;
     }
 
     .footer-email {
