@@ -208,9 +208,13 @@
         align-items: flex-start;
     }
 
+    .footer-label {
+        margin-right: 24px;
+    }
+
     .footer-email {
         width: 264px;
-        margin-right: 24px;
+        margin-bottom: 0;
     }
 
     .footer-form-subscribe {
@@ -387,6 +391,10 @@
 
     .footer-social-media {
         margin-right: 80px;
+    }
+
+    .footer-label {
+        margin-right: 24px;
     }
 
     .footer-email {
