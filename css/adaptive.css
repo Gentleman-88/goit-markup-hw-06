@@ -14,6 +14,10 @@
         font-size: 35px;
     }
 
+    .mobile-social-list{
+        gap: 56px;
+    }
+
     .section-one-headline {
         margin-bottom: 72px;
         max-width: 320px;
