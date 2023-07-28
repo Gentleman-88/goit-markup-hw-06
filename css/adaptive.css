@@ -10,7 +10,9 @@
         display: none;
     }
 
-
+    .mobile-tel{
+        font-size: 35px;
+    }
 
     .section-one-headline {
         margin-bottom: 72px;
@@ -21,6 +23,10 @@
         line-height: 40px;
         letter-spacing: 0.72px;
         text-transform: capitalize;
+    }
+
+    .data-modal-container{
+        width: 408px;
     }
 
 
@@ -357,7 +363,7 @@
 
     .costomers-list {
         height: 88px;
-        width: calc((100% - 24px) / 7);
+        width: calc((100% - 120px) / 6);
     }
 
     .footer-div {

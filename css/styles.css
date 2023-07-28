@@ -750,7 +750,7 @@ fill: #FFF;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 408px;
+    width: 100%;
     min-height: 584px;
     background: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
